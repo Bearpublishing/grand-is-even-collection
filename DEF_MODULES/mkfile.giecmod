@@ -1,0 +1,14 @@
+﻿namespace GIEC
+{
+    using System;
+	using System.IO;
+    public class mkfile
+    {
+        public void Run()
+        {
+			Console.Write("File to make: ");
+			string filePath = Console.ReadLine();		
+            using(File.Create(filePath)){}
+        }
+    }
+}

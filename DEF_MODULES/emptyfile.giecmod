@@ -1,0 +1,15 @@
+﻿namespace GIEC
+{
+    using System;
+	using System.IO;
+    public class emptyfile
+    {
+        public void Run()
+        {
+			Console.Write("File to empty: ");
+			string filePath = Console.ReadLine();		
+            File.Delete(filePath);
+			using(File.Create(filePath)){}
+        }
+    }
+}
