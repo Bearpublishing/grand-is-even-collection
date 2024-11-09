@@ -1,0 +1,25 @@
+namespace GIEC
+{
+    using System;
+    public class path
+    {
+        public void Run()
+        {
+			Console.Write("Enter number to check: ");
+			int number = int.Parse(Console.ReadLine());
+            int lastDigit = Math.Abs(number) % 10;
+            if (lastDigit == 2 || lastDigit == 4 || lastDigit == 6 || lastDigit == 8 || lastDigit == 0) 
+            {
+                Console.WriteLine("Even");
+            }
+            else if (lastDigit == 1 || lastDigit == 3 || lastDigit == 5 || lastDigit == 7 || lastDigit == 9) 
+            {
+                Console.WriteLine("Odd");
+            }
+            else 
+            {
+                Console.WriteLine("Fail");
+            }
+        }
+    }
+}
